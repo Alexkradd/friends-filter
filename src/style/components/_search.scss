@@ -1,0 +1,40 @@
+.search {
+    padding: 10px 15px;
+    height: 45px;
+    background-color: $gray;
+    &__form {
+        display: flex;
+    }
+    &__container {
+        position: relative;
+        margin-right: 20px;
+        width: 90%;
+        height: 26px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--left {
+            &:before {
+                content: '\f002';
+                position: absolute;
+                top: 6px;
+                left: 7px;
+                font-family: $fa;
+                font-size: 14px;
+                font-weight: 400;
+                color: #9f9f9f;
+            }
+        }
+    }
+    &__inp {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        &--left {
+            padding-left: 27px;
+        }
+        &--right {
+            padding-left: 14px;
+        }
+    }
+}

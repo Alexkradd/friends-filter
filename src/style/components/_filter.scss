@@ -1,0 +1,60 @@
+.filter {
+    display: flex;
+    height: 100%;
+    &-friends {
+        padding: 14px 0px 0 15px;
+        width: 50%;
+        overflow: scroll;
+        &__left {
+            border-right: 1px solid $gray;
+        }
+        &__capt {
+            padding-bottom: 6px;
+            font-family: $fira;
+            font-size: 12px;
+            font-weight: 500;
+            color: #4f4f4f;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        &__container {
+            padding-bottom: 45px;
+            height: 100%;
+            overflow: scroll
+        }
+        &__list {
+            width: 100%;
+        }
+        &__item {
+            padding-top: 6px;
+            height: 59px;
+            &:hover {
+                background-color: $gray;
+            }
+        }
+        &__item-container {
+            padding-left: 6px;
+            display: flex;
+            align-items: center;
+        }
+        &__img {
+            height: 45px; width: 45px;
+            border-radius: 50%;
+        }
+        &__name {
+            margin-left: 6px;
+            font-family: $fira;
+            font-size: 12px;
+            font-weight: 500;
+            color: #4f4f4f;
+        }
+        &__add,
+        &__delete {
+            margin: 0 15px 0 auto;
+        }
+        &__link {
+            font-family: $fa;
+            font-style: normal;
+            color: #c4c4c4;
+        }
+    }
+}
