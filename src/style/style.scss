@@ -1,0 +1,90 @@
+// Fonts
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+$fira: "Fira Sans";
+$fa: 'FontAwesome';
+
+// Colors
+$head: #ff8663;
+$gray: #f0f0f0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+    border-color: transparent;
+}
+
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+    font-family: $fira;
+    font-size: 12px;
+    font-weight: 300;
+    color: #9f9f9f;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+// imports
+@import './components/_header';
+@import './components/_search';
+@import './components/_footer';
+@import './components/_filter'

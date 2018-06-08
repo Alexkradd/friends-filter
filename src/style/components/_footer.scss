@@ -1,0 +1,22 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 45px;
+    background-color: $gray;
+    &__save-link {
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 7px;
+        width: 87px;
+        height: 30px;
+        font-family: $fira;
+        font-size: 12px;
+        font-weight: 300;
+        color: #fff;
+        background-color: $head;
+        border-radius: 10px;
+    }
+}
